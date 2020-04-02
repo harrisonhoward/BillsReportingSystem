@@ -10,7 +10,7 @@ Project Initial Commit Date: 02/04/2020.
 This project was solely created by Harrison Howard (Forbidden-Duck).
 Assistance was provided by one of the TAFE Teachers, who will not be named for privacy reasons.
 
-Code has been apprioately commented. If any confusions comes from the code refer to "Support or Contact"
+Code has been appropriately commented. If any confusions comes from the code refer to "Support or Contact"
 
 ### Support or Contact
 
