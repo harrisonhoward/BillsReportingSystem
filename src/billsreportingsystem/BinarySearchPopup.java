@@ -43,7 +43,7 @@ public class BinarySearchPopup extends JFrame {
     private void initializeFrame() {
         // Set the size of the frame
         // Set the location to the centre of the screen
-        setSize(355, totalNames * 22 + 10);
+        setSize(355, ((int) Math.round(totalNames / 1.6)) * 25 + 148);
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         setLocation(dim.width / 2 - getSize().width / 2, dim.height / 2 - getSize().height / 2);
 
