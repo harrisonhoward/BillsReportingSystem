@@ -72,7 +72,7 @@ public class EventHandling implements WindowListener, ActionListener, KeyListene
      * @param btnArray an Array of JButtons
      * @param txtArray the Multi-Dimensional Array of JTextFields
      * @param btnFields an Array of JTextFields (Which are related to a JButton)
-     * @param txtFieldAxis an Array of the X & Y Axis
+     * @param txtFieldAxis an Array of the X and Y Axis
      */
     public void setComponents(JButton[] btnArray, JTextField[][] txtArray, JTextField[] btnFields, int[] txtFieldAxis) {
         btnSort = btnArray[0];

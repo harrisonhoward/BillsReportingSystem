@@ -35,7 +35,7 @@ public class FileManagement {
      * Create a new instance of File Management with
      *
      * @param txtArray the multi-dimensional array of text fields
-     * @param fieldsAxis an array of the X & Y axis
+     * @param fieldsAxis an array of the X and Y axis
      */
     public FileManagement(JTextField[][] txtArray, int[] fieldsAxis) {
         txtFields = txtArray;
