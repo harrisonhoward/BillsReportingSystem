@@ -199,13 +199,6 @@ public class BillsReportingSystem extends JFrame {
      * @param layout The layout used on the frame
      */
     private void displayButtons(SpringLayout layout) {
-        // Set the components in the event instance
-        event.setComponents(
-                new JButton[]{btnSort, btnFind, btnBinSearch, btnClearFind},
-                txtFields,
-                new JTextField[]{txtFind, txtBinary},
-                new int[]{totalX, totalY});
-
         // Set the X & Y Position of the buttons
         int btnXValue = (totalX + 1) * 25 + 30;
         int btnYValue = totalY * 75 + 10;

@@ -139,8 +139,8 @@ public class FileManagement {
             // Loop the fields on the Y Axis
             for (int x = 1; x < totalX; x++) {
                 for (int y = 0; y < totalY; y++) {
-                    // Create a variable which holds the value with a "," (except the last value)
-                    String line = txtFields[x][y].getText() + (y == totalY - 1 ? "" : ",");
+                    // Create a variable which holds the value
+                    String line = txtFields[x][y].getText();
                     // Convert the variable to an array of bytes
                     byte[] bytes = line.getBytes("UTF-8");
                     // Write the bytes to the Random Access File
