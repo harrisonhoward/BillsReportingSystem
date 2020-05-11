@@ -132,22 +132,19 @@ public class FileManagement {
             // Instantiate a new Random Access File with
             // The file name and with Read & Write access (rw)
             RandomAccessFile raf = new RandomAccessFile(fileName, "rw");
-            // Create a variable with acts as a new line
-            byte[] newLine = "\n".getBytes("UTF-8");
-
+            
+            // Create a variable for holding the string
+            String str = "";
+            
             // Loop the fields on the X Axis (Starting from 1)
             // Loop the fields on the Y Axis
             for (int x = 1; x < totalX; x++) {
                 for (int y = 0; y < totalY; y++) {
-                    // Create a variable which holds the value
-                    String line = txtFields[x][y].getText();
-                    // Convert the variable to an array of bytes
-                    byte[] bytes = line.getBytes("UTF-8");
+                    // Write the record to the string
+                    str += txtFields[x][y].getText();
                     // Write the bytes to the Random Access File
-                    raf.write(bytes);
+                    raf.writeUTF(str);
                 }
-                // Write a new line
-                raf.write(newLine);
             }
             raf.close();
         } catch (Exception e) {
